@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int yas,gun;
+	printf("Yasinizi girin-> ");
+	scanf("%d",&yas);
+	printf("Bilet almak istediginiz gunu girin-> ");
+	scanf("%d",&gun);
+	if(yas>12 && yas<65 && gun!=3)
+	{
+		printf("Odenecek tutar-> 120TL\n");
+	}
+	if(yas<=12 && gun!=3)
+	{
+		printf("Odenecek tutar-> 60TL\n");
+	}
+	if(yas<=12 && gun==3)
+	{
+		printf("Odenecek tutar-> 40TL\n");
+	}
+	if(yas>=65 && gun!=3)
+	{
+		printf("Odenecek tutar-> 84TL\n");
+	}
+	if(yas>=65 && gun==3)
+	{
+		printf("Odenecek tutar-> 64TL");
+	}
+	if(yas>12 && yas<65 && gun==3)
+	{
+		printf("Odenecek tutar-> 100TL\n");
+	}
+	return 0;
+}
